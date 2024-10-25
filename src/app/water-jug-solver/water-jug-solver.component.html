@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Water Jug Challenge</h1>
+  <div class="inputs">
+    <label>Jug X Capacity (in gallons):</label>
+    <input type="number" [(ngModel)]="x" />
+
+    <label>Jug Y Capacity (in gallons):</label>
+    <input type="number" [(ngModel)]="y" />
+
+    <label>Target Z (in gallons):</label>
+    <input type="number" [(ngModel)]="z" />
+
+    <button (click)="solve()">Solve</button>
+  </div>
+
+  <div *ngIf="steps.length">
+    <h2>Steps:</h2>
+    <ul>
+      <li *ngFor="let step of steps">{{ step }}</li>
+    </ul>
+  </div>
+</div>
