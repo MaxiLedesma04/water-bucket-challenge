@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
+
+## Descripción
+Esta aplicación resuelve el clásico Enigma de los Jarrones de Agua utilizando Angular para la interfaz de usuario y TypeScript para la lógica. El usuario puede ingresar las capacidades de dos jarrones (`X` e `Y`) y un objetivo (`Z`) para medir, y la aplicación mostrará los pasos para alcanzar la solución o indicará que no hay solución posible.
+
+
+## Metodo de resolucion del problema
+Para poder resolver este problema se aplico a la logica el algoritmo de Euclides, con ello podemos decir que Si Z es un múltiplo del máximo común divisor (MCD) de X e Y y Z es menor o igual al máximo de X e Y, entonces el problema tiene solución.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
